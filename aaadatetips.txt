@@ -1,0 +1,84 @@
+
+<p align="left">Finding items by dates or parts of dates can be difficult
+because dates&nbsp; frequently are stored as dates and times. </p>
+<p align="left">For example, [date field] date may be stored as <i>4/22/2003
+5:24:38 PM</i>. If you were to search for<i> 4/22/2003</i>, you would not find <i>4/22/2003
+5:24:38 PM </i>or any other records that also recorded a time for that date.</p>
+<p align="left">To see if dates also contain times, click on the [group by page]
+link and, in the pulldown under &quot;Select one or more fields to group
+by&quot; select a date field, [date field] for example. If you're dealing with a
+large table, you might want to limit the results set. In the area under
+&quot;Select records that meet the following conditions,&quot; select [date
+field] under &quot;Field;&quot; select &quot;contains&quot; under &quot;Show
+Rows Where;&quot; and type 2003 under &quot;Value 1.&quot;</p>
+<p align="left">If results show dates and times, you'll have to deal with date
+searches accordingly. Generally, you'll use one of two methods: a <b>range</b>
+search, which is faster, or a <b>cast </b>search which is easier to set up.</p>
+<h3 align="left">Range Searches</h3>
+<p align="left">To search for any records containing the date <i>4/22/2003 </i>in
+the [date field], first click on the [filter page] link. Under
+&quot;Field,&quot; select [Date Field]. Under &quot;Show Rows Where,&quot;
+select &quot;is greater than or equal to.&quot; Type in &quot;4/22/2003&quot;
+(without the quotes) under &quot;Value 1.&quot;</p>
+<p align="left">Next, select &quot;And&quot; from the first &quot;And / or&quot;
+pulldown. Staying on the same row, select &quot;is less than&quot; from the
+&quot;Show Rows Where&quot; pulldown to the right of the &quot;And / or&quot;
+pulldown. Then, under &quot;Value 2&quot; type in &quot;4/3/2003&quot; (without
+the quotes). Click &quot;Submit&quot; and the program will search for any
+records that have <i>4/2/2003 </i>in the [date field].</p>
+<h3 align="left">Cast Searches</h3>
+<p align="left">When you select a date, say [date field], on the filter page,
+and select any of the following functions in the &quot;Show Rows Where&quot;
+pulldown:</p>
+<p align="center">begins with<br>
+does not begin with<br>
+ends with<br>
+does not end with<br>
+contains<br>
+does not contain</p>
+<p align="left">The program will <i>cast</i> the stored date as a string of
+text. When this happens the program converts the date to a format that is not
+intuitive. Unless you know the quirks of the conversion process you will have a
+difficult time find dates using any of the above mentioned operators.</p>
+<p align="left">Our example of <i>4/22/2003 5:24:38 PM </i> would be cast as <i>Apr
+22 2003&nbsp; 5:24:38 PM. </i>So, if you wanted to find all records containing
+the date 4/22/2003, you would select the &quot;begins with&quot; operator and
+enter &quot;Apr 22 2003&quot; (without quotes) under Value 1. (You could also
+select the &quot;contains&quot; operator, but &quot;begins with&quot; is <i>always</i>
+faster than &quot;contains.&quot;) <b>Note: </b>There is no comma separating the
+date and the year.</p>
+<p align="left">Things get a little trickier when you're dealing with
+single-digit dates, such as April 2. The conversion program inserts a space
+before any single-digit date (or single-digit times). So if you were to search
+for all dates that happened on April 2, regardless of the year, you would select
+the &quot;begins with&quot; operator and enter &quot;Apr&nbsp; 2&quot; (that's <i>a-p-r-space-space-2,
+</i>without the quotes) in the Value 1 box. If you enter <i>a-p-r-space-2</i>,
+that is Apr 2 with a single space, you would find every date in the twenties
+during April, but <i>not</i> April 2nd.</p>
+<p align="left">If you're looking for records in a particular year, it
+safer&nbsp; to use the &quot;contains&quot; operator, rather than the &quot;ends
+with&quot; operator. If the date field also is storing times, the stored date
+will not end with the year, but with the time. So, to look for dates in 2003,
+use &quot;contains&quot; and enter 2003 in the Value box.</p>
+
+
+
+<h3>To compare one field to another on the Filter Page:</h3>
+<blockquote>
+  <ol>
+    <li>On the Filter Page, select one of the fields from the pull-down menu
+      under &quot;Fields&quot;.</li>
+    <li>Select the comparison you want to make from the pull-down menu under
+      &quot;Show Rows Where.&quot; (Note: only the first six selections (equals,
+      does not equal, is greater than or equal to, is greater than, is less
+      than, is less than or equal to) will work with field comparisons.</li>
+    <li>On this page, highlight&nbsp; the &quot;Field Name&quot; (and <b>not</b>
+      the &quot;Field Alias&quot;) you want to compare, copy it (Ctrl-V on the
+      keyboard or Edit | Copy from the Internet Explorer menu bar) and paste it
+      into the &quot;Value 1&quot; box on the Filter Page. Example: [initw] for
+      the &quot;Initial Wilfull&quot; field. Capitalization does not matter; the
+      application is not case sensitive.</li>
+  </ol>
+  <p>&nbsp;</p>
+</blockquote>
+

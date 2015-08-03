@@ -1,0 +1,14 @@
+the following pages have to be modified to delete the gaga file before recordset changes are saved.
+
+Win 2003 will allow saving a recordset to itself, but win2k will not.
+
+
+custom
+modify
+modtable
+orderby
+projspecs
+specscustom
+tablespecs
+
+
