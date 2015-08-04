@@ -11,13 +11,13 @@ At one of the NICAR conferences I went to in the early 2000s, Tom Torok of The N
 
 Sure, there was a bit of configuration to make the database, as my former colleague Aron Pilhofer put it, "shboomable," and it was written in ASP, but hey, this was pre-Django and pre-Rails. For most of us, it was pre-PHP. Shboom was, like most everything Tom did, almost magical and slightly mad. I figured it needed to be remembered, because it was a remarkable piece of software for those of us who had no idea what software really was. It is one of the first examples of web development in the newsroom that spread beyond it.
 
-So here, then, are files that, with Tom's permission, I pulled off a New York Times server in 2014 for the purposes of open-sourcing Shboom.
+So here, then, are files that, with Tom's permission, I pulled off a New York Times server in 2014 for the purposes of open-sourcing Shboom. The design of Shboom's pages is by Matt Ericson, also of The New York Times.
 
 ### FAQ
 
 ##### Does it still work?
 
-Possibly. I have no ASP server to install it on, and it is more than a few years old. But it did once, so it probably can again.
+Yes! From Tom: "I've recently written a number of Shbooms for The Philadelphia Inquirer. It's web based and I used the scripting engine for whatever is associated with Windows Explorer in Windows 7. The scripting engine of some versions of Firefox will take you to the end and produce nothing. That applies to writing pages only. The pages it writes work in all browsers for searches and more (more on that later). The latest version of MS SQL Server I tried it on was 2012 and it worked."
 
 ##### What do I need to find out?
 
