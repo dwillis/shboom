@@ -1,5 +1,5 @@
 # shboom
-Tom Torok's original ASP.NET app for searching database tables
+Tom Torok's original ASP app for searching database tables
 
 "I've never found anything easier than Tom Torok's stuff -- all you have to do is point it to a SQL Server table, specify the columns you want to search, any column headers you want to see in a different form than the field names, and voila."
 
